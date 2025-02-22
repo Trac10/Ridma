@@ -1,28 +1,37 @@
 {
-  "name": "VAJIRA-MD",
-  "description": "VAJIRA-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
-  "logo": "https://i.ibb.co/dTCVJJb/temp-image.jpg",
-  "keywords": ["vajiramd", "bot", "whatsapp bot", "multi device", "vajira-md"],
+  "name": "ASITHA-MD",
+  "description": "Javascript WhatsApp bot made by Asitha",
+  "logo": "https://telegra.ph/file/38a4ba6f7a51c15f5feaf.jpg",
+  "keywords": ["bot"],
   "success_url": "/",
 
   "env": {
     "SESSION_ID": {
-            "description": "Type the Session-ID you got from scaning QR",
-            "required": true,
-            "value": "put session id here"
-        },
-    "MODE": {
-            "description": "Put button or nonbutton to change the mode",
-            "required": true,
-            "value": "button"
-        }
+      "description": "Put the session-id here.",
+      "required": true
     },
-         "buildpacks": [
+ "NEWS_SEND_JID": {
+      "description": "Put the jid channel or group",
+      "required": false
+    },
+"AUTO_NEWS_SENDER": {
+      "description": "true or false",
+      "required": false
+    } ,
+"TIKTOK_SEND_JID": {
+      "description": "Put the jid channel or group",
+      "required": false
+    } ,
+    "AUTO_TIKTOK_SENDER": {
+      "description": "true or false",
+      "required": false
+    } 
+},
+
+     "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
      ],
   "stack": "heroku-24"
-  
-  
 }
